@@ -2,7 +2,7 @@
 
 from collections import namedtuple
 
-Task = namedtuple('Task', ['summary', 'owner', 'done', 'id'])
+Task = namedtuple("Task", ["summary", "owner", "done", "id"])
 Task.__new__.__defaults__ = (None, None, False, None)
 
 
@@ -15,7 +15,7 @@ def test_defaults():
 
 def test_member_access():
     """Check field functionality of namedtuple"""
-    t = Task('buy milk', 'brian')
-    assert t.summary == 'buy milk'
-    assert t.owner == 'brian'
-    assert(t.done, t.id) == (False, None)
+    t = Task("buy milk", "brian")
+    assert t.summary == "buy milk"
+    assert t.owner == "brian"
+    assert (t.done, t.id) == (False, None)
