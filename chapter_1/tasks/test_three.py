@@ -14,7 +14,7 @@ def test_defaults():
 
 
 def test_member_access():
-    """Check field functionality of namedtuple"""
+    """Check .field functionality of namedtuple."""
     t = Task("buy milk", "brian")
     assert t.summary == "buy milk"
     assert t.owner == "brian"
